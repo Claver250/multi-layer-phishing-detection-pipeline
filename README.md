@@ -100,16 +100,3 @@ Flags raised:
 - **Single Responsibility Principle** — each decorator owns exactly one detection rule; each observer owns exactly one response action.
 - **Open/Closed Principle** — new checks or new response channels can be added by writing a new class, with zero changes to existing pipeline or manager code.
 
-## Roadmap
-
-Ideas for turning this from an MVP into something production-grade:
-
-- [ ] Async/concurrent inspection (`InspectAsync`) so decorators that hit external services (SPF/DNS lookups, threat-intel APIs) don't block each other
-- [ ] Swap keyword matching in `BodySentimentDecorator` for an NLP/ML classifier for subtler social-engineering and BEC detection
-- [ ] Real mail ingestion via Gmail/Microsoft Graph API or MTA/Milter integration, instead of the hardcoded sample emails in `Program.cs`
-- [ ] Additional observers: SIEM logging (Splunk/Sentinel/ElasticSearch), Slack/Teams webhook alerts, database persistence via EF Core
-- [ ] Move pipeline composition and score thresholds into DI + config (`appsettings.json`) instead of hardcoding the decorator stack in `Program.cs`
-
-## License
-
-No license file is currently included. Add one (e.g., MIT) if you intend this to be reused by others.
