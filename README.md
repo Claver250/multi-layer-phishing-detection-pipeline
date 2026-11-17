@@ -91,7 +91,7 @@ Flags raised:
  - Mismatched Sender and Reply-To Address (+30 points)
  - Urgent social engneering keyword detected: 'password reset required' (+15 points)
  - Urgent social engneering keyword detected: 'wire transfer' (+15 points)
- - High-risk double extension attachment: 'billing_details.pdf.exe' (+50 points)
+ - High-risk double extension attachment: 'billing_details.pdf.exe' (+40 points)
 [QUARANTINE ACTION] Isolating email from 'support@netflix-security-alert.com'...
 ```
 
