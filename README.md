@@ -1,4 +1,4 @@
-# Phishing Detector
+# Multi Layered Phishing Detector
 
 An enterprise-style email security gateway built in **C# (.NET 8)** that inspects incoming emails for phishing indicators and reacts to high-risk messages — architected around the **Decorator** and **Observer** design patterns so that threat *detection* and threat *response* stay fully decoupled.
 
